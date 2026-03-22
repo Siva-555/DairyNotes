@@ -1,8 +1,11 @@
+import EventCalender from '@/components/EventCalender'
 import React from 'react'
 
 const Page = () => {
   return (
-    <div>Page</div>
+    <div className='w-full '>
+      <EventCalender className="" />
+    </div>
   )
 }
 
