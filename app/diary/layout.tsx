@@ -1,3 +1,4 @@
+import Sidebar from "@/components/Sidebar"
 import React from "react"
 
 const DairyLayout = ({
@@ -5,7 +6,12 @@ const DairyLayout = ({
 }: Readonly<{
   children: React.ReactNode
 }>) => {
-  return <div>{children}</div>
+  return (
+    <div className="flex ">
+      <Sidebar />
+      {children}
+    </div>
+  )
 }
 
 export default DairyLayout

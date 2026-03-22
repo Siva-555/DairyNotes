@@ -1,3 +1,4 @@
+import Sidebar from "@/components/Sidebar"
 import React from "react"
 
 const NotesLayout = ({
@@ -5,7 +6,7 @@ const NotesLayout = ({
 }: Readonly<{
   children: React.ReactNode
 }>) => {
-  return <div>{children}</div>
+  return <div><Sidebar />{children}</div>
 }
 
 export default NotesLayout
